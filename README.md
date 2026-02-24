@@ -115,52 +115,100 @@ See [docs/monitoring-stack.md](docs/monitoring-stack.md) for full details.
 
 ## Prerequisites
 
-- Docker Desktop
+- [Cursor IDE](https://cursor.sh) (for the AI coaching skill)
+- [Ollama](https://ollama.ai) installed
+- [Docker Desktop](https://docker.com/products/docker-desktop) running
 - Python 3.11+
 - 16GB+ RAM (32GB recommended for local LLMs)
 - GPU optional (CPU inference supported via Ollama)
-- Ollama installed
-- Node.js 18+ (for PromptFoo)
+- Node.js 18+ (for PromptFoo in later labs)
 
-## Getting Started
+## AI Coaching Skill for Cursor
 
-### For New Learners — Start Fresh from Template
+This project includes a **ready-to-use Cursor AI skill** in the [`skill/`](skill/) folder. Once installed, the AI becomes your personal MLOps coach that:
 
-1. Click **"Use this template"** → **"Create a new repository"** on GitHub
-2. Clone your new repo locally
-3. Choose your learning path below
+- Manages your daily workload and tracks your progress
+- Explains every line of code **before and after** writing it
+- Asks comprehension questions and waits for your answers
+- Runs a **10-question interactive quiz** at the end of each lab with grading
+- Generates Quick Start documentation and pushes to your portfolio
+- Coaches in **your preferred language** (English, Français, Español, Deutsch, Português, 日本語, 中文, العربية)
 
-### Option A: With the Cursor AI Coach (recommended)
+See [skill/README.md](skill/README.md) for the full feature list.
 
-The project includes an AI coaching skill for [Cursor IDE](https://cursor.sh) that guides you interactively through every lab with explanations, quizzes, and progress tracking. Supports multiple coaching languages.
+## Getting Started — Step by Step
+
+### Step 1: Get the Repository
+
+**Option A — Use as template (recommended for new learners)**
+
+Click **"Use this template"** → **"Create a new repository"** on GitHub, then:
 
 ```bash
 git clone https://github.com/<your-username>/llm-ops-playground.git
 cd llm-ops-playground
+```
 
-# Install the Cursor skill
+**Option B — Clone directly**
+
+```bash
+git clone https://github.com/ajbilou-git/llm-ops-playground.git
+cd llm-ops-playground
+```
+
+### Step 2: Install the Cursor AI Coaching Skill
+
+Copy the skill files into your Cursor workspace configuration:
+
+```bash
 mkdir -p .cursor/skills/AI-Learning-Coach
 cp skill/SKILL.md .cursor/skills/AI-Learning-Coach/SKILL.md
 cp skill/progress.md .cursor/skills/AI-Learning-Coach/progress.md
 ```
 
-Edit `COACHING_LANGUAGE` in `.cursor/skills/AI-Learning-Coach/SKILL.md` to set your preferred language (English, Français, Español, Deutsch, Português, 日本語, 中文, العربية).
+### Step 3: Choose Your Coaching Language
 
-Open in Cursor, then type: **"start AI Learning Coach"**
+Open `.cursor/skills/AI-Learning-Coach/SKILL.md` and edit the language setting at the top:
 
-See [skill/README.md](skill/README.md) for full setup instructions.
+```
+COACHING_LANGUAGE: English
+```
 
-### Option B: Self-Guided
+Change `English` to your preferred language. The coach will speak to you in that language while all code and documentation remain in English.
+
+### Step 4: Install Prerequisites
 
 ```bash
-git clone https://github.com/<your-username>/llm-ops-playground.git
-cd llm-ops-playground/labs/lab-01-llm-local
+# Verify Ollama is installed
+ollama --version
+
+# Pull a model
+ollama pull mistral
+
+# Verify Docker is running
+docker info
+```
+
+### Step 5: Launch the Coach
+
+Open the project in **Cursor IDE** and type in the chat:
+
+```
+start AI Learning Coach
+```
+
+The coach will ask you a few setup questions (available time, hardware, goals) and generate your personalized 3-month learning plan. Then you start Lab 01 immediately.
+
+### Alternative: Self-Guided (no Cursor)
+
+If you prefer learning without the AI coach, follow each lab's README in order:
+
+```bash
+cd labs/lab-01-llm-local
 cat README.md
 ```
 
-Follow each lab's README in order. Each completed lab includes a Quick Start section so others can reproduce your work.
-
-### For Recruiters — Reviewing This Portfolio
+## For Recruiters — Reviewing This Portfolio
 
 Each `labs/lab-XX-*/` folder contains:
 - **README.md** with objectives, architecture, and Quick Start
