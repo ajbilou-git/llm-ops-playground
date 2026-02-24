@@ -1,6 +1,6 @@
 # LLM Ops Playground
 
-> A hands-on, enterprise-simulated learning path from **DevOps Engineer** to **MLOps / AI DevOps Engineer** in 3 months.
+> Hands-on, enterprise-simulated AI/MLOps labs — learn by deploying real systems locally.
 
 Every concept is deployed locally and tested against a realistic industrial maintenance company scenario — no toy examples, only production-grade patterns.
 
