@@ -208,18 +208,10 @@ cd labs/lab-01-llm-local
 cat README.md
 ```
 
-## For Recruiters — Reviewing This Portfolio
+## See It In Action
 
-Each `labs/lab-XX-*/` folder contains:
-- **README.md** with objectives, architecture, and Quick Start
-- **Source code** implementing the lab
-- **Quick Start** section: clone and run the lab yourself in minutes
-
-Recommended review path:
-1. [Lab 03 — RAG Pipeline](labs/lab-03-rag-pipeline/) — Core RAG implementation
-2. [Lab 05 — MCP](labs/lab-05-mcp/) — Tool integration architecture
-3. [Lab 11 — Monitoring](labs/lab-11-monitoring/) — Production observability
-4. [Lab 10 — Capstone](labs/lab-10-capstone/) — Full platform integration
+Looking for a completed version with working lab code?
+Check out the portfolio repo: [llm-ops-portfolio](https://github.com/ajbilou-git/llm-ops-portfolio)
 
 ## Progress Tracking
 
