@@ -1,6 +1,6 @@
 # MLOps Learning Coach — Cursor AI Skill
 
-An interactive AI coaching skill for [Cursor IDE](https://cursor.sh) that guides you from **DevOps Engineer** to **MLOps / AI DevOps Engineer** in 3 months through hands-on enterprise-simulated labs.
+An interactive AI coaching skill for [Cursor IDE](https://cursor.sh) that guides you through hands-on, enterprise-simulated AI/MLOps labs at your own pace.
 
 ## What This Skill Does
 
