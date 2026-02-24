@@ -24,6 +24,10 @@ Every concept is deployed locally and tested against a realistic industrial main
 ```
 llm-ops-playground/
 ├── README.md
+├── skill/
+│   ├── SKILL.md                # Cursor AI coaching skill (multi-language)
+│   ├── README.md               # How to install and use in Cursor
+│   └── progress.md             # Personal progress tracker
 ├── roadmap/
 │   ├── ROADMAP.md              # Full 3-month learning roadmap
 │   └── progress.md             # Personal progress tracker
@@ -110,6 +114,26 @@ See [docs/monitoring-stack.md](docs/monitoring-stack.md) for full details.
 - Node.js 18+ (for PromptFoo)
 
 ## Getting Started
+
+### Option 1: With the Cursor AI Coach (recommended)
+
+The project includes an AI coaching skill for [Cursor IDE](https://cursor.sh) that guides you interactively through every lab with explanations, quizzes, and progress tracking.
+
+```bash
+git clone https://github.com/<your-username>/llm-ops-playground.git
+cd llm-ops-playground
+
+# Install the Cursor skill
+mkdir -p .cursor/skills/AI-Learning-Coach
+cp skill/SKILL.md .cursor/skills/AI-Learning-Coach/SKILL.md
+cp skill/progress.md .cursor/skills/AI-Learning-Coach/progress.md
+
+# Open in Cursor, then type: "start AI Learning Coach"
+```
+
+See [skill/README.md](skill/README.md) for full setup instructions and language configuration.
+
+### Option 2: Self-Guided
 
 ```bash
 git clone https://github.com/<your-username>/llm-ops-playground.git
