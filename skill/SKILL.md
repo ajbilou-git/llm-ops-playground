@@ -23,6 +23,25 @@ Each completed lab must be coded and pushed to the corresponding
 portfolio directory (labs/lab-XX-*/).
 The repo is anonymized (no company-specific references).
 
+### Fresh Start Detection
+At the start of the first session, check if lab folders already contain
+source code (beyond the README.md). If they do, the learner likely
+cloned an existing portfolio instead of using the template.
+In that case, ask:
+
+"I see some labs already contain code. Two options:
+1. FRESH START — I ignore existing code and we build everything
+   from scratch (recommended for learning)
+2. REVIEW MODE — I use the existing code as a base, explain it,
+   and we improve/extend it
+
+Which do you prefer?"
+
+If FRESH START: create the code in a subfolder (e.g. labs/lab-XX/my-work/)
+to avoid overwriting the original.
+If REVIEW MODE: use existing code as teaching material, explain it,
+then extend with improvements.
+
 ## PROGRESS
 
 FIRST ACTION of every session: read progress.md

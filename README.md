@@ -4,6 +4,15 @@
 
 Every concept is deployed locally and tested against a realistic industrial maintenance company scenario — no toy examples, only production-grade patterns.
 
+## Use This Template
+
+This repository is a **GitHub Template**. Click **"Use this template"** at the top of the page to create your own copy and start your personal learning journey with a clean slate.
+
+| Audience | What you get |
+|----------|-------------|
+| **DevOps engineers wanting to learn AI/MLOps** | A structured 3-month curriculum with 11 hands-on labs, an AI coaching skill for Cursor, and a complete monitoring stack to deploy locally |
+| **Recruiters reviewing a candidate** | Each lab folder contains working code, Quick Start instructions, and architecture diagrams demonstrating real AI/MLOps implementation skills |
+
 ## What This Project Covers
 
 | Domain | Topics |
@@ -115,9 +124,15 @@ See [docs/monitoring-stack.md](docs/monitoring-stack.md) for full details.
 
 ## Getting Started
 
-### Option 1: With the Cursor AI Coach (recommended)
+### For New Learners — Start Fresh from Template
 
-The project includes an AI coaching skill for [Cursor IDE](https://cursor.sh) that guides you interactively through every lab with explanations, quizzes, and progress tracking.
+1. Click **"Use this template"** → **"Create a new repository"** on GitHub
+2. Clone your new repo locally
+3. Choose your learning path below
+
+### Option A: With the Cursor AI Coach (recommended)
+
+The project includes an AI coaching skill for [Cursor IDE](https://cursor.sh) that guides you interactively through every lab with explanations, quizzes, and progress tracking. Supports multiple coaching languages.
 
 ```bash
 git clone https://github.com/<your-username>/llm-ops-playground.git
@@ -127,22 +142,36 @@ cd llm-ops-playground
 mkdir -p .cursor/skills/AI-Learning-Coach
 cp skill/SKILL.md .cursor/skills/AI-Learning-Coach/SKILL.md
 cp skill/progress.md .cursor/skills/AI-Learning-Coach/progress.md
-
-# Open in Cursor, then type: "start AI Learning Coach"
 ```
 
-See [skill/README.md](skill/README.md) for full setup instructions and language configuration.
+Edit `COACHING_LANGUAGE` in `.cursor/skills/AI-Learning-Coach/SKILL.md` to set your preferred language (English, Français, Español, Deutsch, Português, 日本語, 中文, العربية).
 
-### Option 2: Self-Guided
+Open in Cursor, then type: **"start AI Learning Coach"**
+
+See [skill/README.md](skill/README.md) for full setup instructions.
+
+### Option B: Self-Guided
 
 ```bash
 git clone https://github.com/<your-username>/llm-ops-playground.git
-cd llm-ops-playground
-
-# Start with Lab 01
-cd labs/lab-01-llm-local
+cd llm-ops-playground/labs/lab-01-llm-local
 cat README.md
 ```
+
+Follow each lab's README in order. Each completed lab includes a Quick Start section so others can reproduce your work.
+
+### For Recruiters — Reviewing This Portfolio
+
+Each `labs/lab-XX-*/` folder contains:
+- **README.md** with objectives, architecture, and Quick Start
+- **Source code** implementing the lab
+- **Quick Start** section: clone and run the lab yourself in minutes
+
+Recommended review path:
+1. [Lab 03 — RAG Pipeline](labs/lab-03-rag-pipeline/) — Core RAG implementation
+2. [Lab 05 — MCP](labs/lab-05-mcp/) — Tool integration architecture
+3. [Lab 11 — Monitoring](labs/lab-11-monitoring/) — Production observability
+4. [Lab 10 — Capstone](labs/lab-10-capstone/) — Full platform integration
 
 ## Progress Tracking
 
